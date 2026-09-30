@@ -1,4 +1,4 @@
-const bookingFloor = document.getElementById("booking-floor");
+const bookingFloor = document.getElementById("booking");
 const course = document.getElementById("course");
 const courseHeading = document.getElementById("course-heading");
 const courseInfo = document.getElementById("course-info");
@@ -74,9 +74,9 @@ finishBooking.addEventListener("click", (event) => {
     // Lage kvittering for bestillingsbekreftelsen.
     const formData = new FormData(bestillingForm);
 
-    const navn = formData.get("name");
+    const navn = formData.get("booking-name");
     console.log(navn);
-    const epost = formData.get("email");
+    const epost = formData.get("booking-email");
     const telefon = formData.get("telefon");
     const kurs = formData.get("courseBooking");
     const dato = formData.get("dato");
@@ -160,9 +160,9 @@ sendTilbakemelding.addEventListener("click", (event) => {
   event.preventDefault();
 
   const formData = new FormData(tilbakemeldingForm);
-  const navn = formData.get("name");
+  const navn = formData.get("feedback-name");
   console.log(navn);
-  const epost = formData.get("email");
+  const epost = formData.get("feedback-email");
   const kurs = formData.get("courseBooking");
   const favorittdel = formData.get("favorittdel");
   const forbedring = formData.get("forbedring");
@@ -221,4 +221,34 @@ galleryImages.forEach((Image) => {
 
 closeLightbox.addEventListener("click", () => {
   lightbox.close();
+});
+
+// --------------
+//     NAV
+// ---------------
+const sections = document.querySelectorAll(".hero, .floor");
+const navDots = document.querySelectorAll(".nav-dot");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        navDots.forEach((dot) => {
+          dot.classList.remove("active");
+        });
+
+        const activeDot = document.querySelector(
+          `.nav-dot[href="#${entry.target.id}"]`,
+        );
+
+        activeDot.classList.add("active");
+      }
+    });
+  },
+  {
+    threshold: 0.6,
+  },
+);
+sections.forEach((section) => {
+  observer.observe(section);
 });

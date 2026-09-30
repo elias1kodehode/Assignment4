@@ -10,12 +10,22 @@
 </head>
 
 <body>
-    <div class="hero">
+    <nav class="side-nav">
+        <a href="#start" class="nav-dot" aria-label="start"></a>
+        <a href="#info" class="nav-dot" aria-label="start"></a>
+        <a href="#booking" class="nav-dot" aria-label="start"></a>
+        <a href="#gallery" class="nav-dot" aria-label="start"></a>
+        <a href="#feedback" class="nav-dot" aria-label="start"></a>
+    </nav>
+    <div class="hero" id="start">
         <div class="herotext">
             <h1><a href="#info">Craftsvilla!</a></h1>
             <p>«Sammen gjennom kreativitet.»</p>
 
         </div>
+        <a href="#info" class="scroll-indicator" aria-label="Scroll til informasjon">
+            ↓
+        </a>
     </div>
     <div class="house">
         <footer>
@@ -86,7 +96,7 @@
                     </section>
                 </div>
             </div>
-            <div class="floor booking" id="booking-floor">
+            <div class="floor booking" id="booking">
                 <div class="room ">
                     <section>
                         <h2>Workshops</h2>
@@ -119,10 +129,11 @@
                         <dialog id="booking-dialog">
                             <h2>Bestillingskjema</h2>
                             <form action="" id="bestilling-form">
-                                <label for="name">Navn: </label>
-                                <input type="text" name="name" id="name" placeholder="Navn Navnesen" required>
-                                <label for="email">Epost:</label>
-                                <input type="email" name="email" id="email" placeholder="navn@navnesen.no" required>
+                                <label for="booking-name">Navn: </label>
+                                <input type="text" name="booking-name" id="name" placeholder="Navn Navnesen" required>
+                                <label for="booking-email">Epost:</label>
+                                <input type="email" name="booking-email" id="email" placeholder="navn@navnesen.no"
+                                    required>
                                 <label for="telefon">Telefon: </label>
                                 <input type="tel" name="telefon" id="telefon" required>
                                 <label for="courseBooking">Velg kunstform: </label>
@@ -156,7 +167,7 @@
                     </section>
                 </div>
             </div>
-            <div class="floor gallery">
+            <div class="floor gallery" id="gallery">
                 <div class="room galleri-rom">
                     <section>
                         <h2>Galleri</h2>
@@ -182,7 +193,7 @@
                     </dialog>
                 </div>
             </div>
-            <div class="floor feedback">
+            <div class="floor feedback" id="feedback">
                 <div class="room">
                     <section>
                         <h2>Tilbakemelding</h2>
@@ -205,11 +216,12 @@
                         <dialog id="tilbakemelding-dialog">
                             <form action="" id="tilbakemelding-form">
                                 <!-- navn -->
-                                <label for="name">Navn: </label>
-                                <input type="text" name="name" id="name" placeholder="Navn Navnesen" required>
+                                <label for="feedback-name">Navn: </label>
+                                <input type="text" name="feedback-name" id="name" placeholder="Navn Navnesen" required>
                                 <!-- email -->
-                                <label for="epost">Epost:</label>
-                                <input type="email" name="email" id="email" placeholder="navn@navnesen.no" required>
+                                <label for="feedback-email">Epost:</label>
+                                <input type="email" name="feedback-email" id="email" placeholder="navn@navnesen.no"
+                                    required>
                                 <!-- kunstform nedtrekk -->
                                 <label for="courseBooking">Velg kunstform: </label>
                                 <select name="courseBooking" id="courseBooking">
