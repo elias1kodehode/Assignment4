@@ -78,6 +78,10 @@ button:hover {
 .house {
   width: 100%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .floor {
   height: 100dvh;
@@ -88,13 +92,14 @@ button:hover {
   width: 90%;
   margin: auto;
   padding-top: var(--space-xl);
-  overflow: hidden;
+  overflow: scroll;
 }
 .info {
   background-image: url(img/info.png);
   background-position: center;
   background-size: cover;
 }
+
 .booking {
   background-image: url(img/booking.png);
   background-position: center;
@@ -204,9 +209,10 @@ section {
   padding: var(--space-small);
 }
 footer {
+  width: 80%;
   height: 50px;
   position: sticky;
-  top: calc(100dvh - 40px);
+  top: calc(100dvh - 50px);
 }
 .footer {
   display: flex;
