@@ -1,0 +1,158 @@
+CRAFTSVILLA
+
+Engasjerende og brukervennelig
+
+Forretningsoversikt:
+CRAFTSVILLA har som mål å tilby kreative workshops og aktiviteter som fremmer samhold og avslapning blant ulike grupper som foreldre og barn, venner, kolleger og flere. Målet er å skape et innbydende rom hvor folk i alle aldre kan nyte kvalitetstid sammen i fritiden, lage kunst og utforske kreativiteten sin.
+
+Tjenester som tilbys:
+
+Tilgjengelige kunstformer og sett:
+
+    Mosaikk Kunst - 400 kr
+    Sett inkluderer: Ramme, A4 størrelse treplate, små fargede steiner, gummi.
+
+    Akvarellmaling - 200 kr
+    Sett inkluderer: Ramme, akvarellpapir med designmal, akvarellfarger, pensler.
+
+    Lerretsmaling - 300 kr
+    Sett inkluderer: Ramme, akrylpapir med designmal, akrylfarger, pensler.
+
+(Merk: Flere kunstformer vil bli introdusert i fremtiden.)
+
+Prosjekt Tidslinje:
+
+1. Første Design:
+
+    Start med å lage en Figma-fil eller tegne et grovt design av nettstedets layout.
+
+    Lag wireframes for hver side (Hjemmeside, Booking-siden, Tilbakemeldings-siden, Galleri).
+    
+    Bruk auto-layout og komponenter for effektivitet (f.eks. auto-layout for navigasjonsbaren og gjenbrukbare komponenter for header og knapper).
+    
+    Lag varianter for knappe-komponenten, kort-komponenten (hvis du har med i dette prosjektet)
+
+----------------------------------------------------------------------
+Retningslinjer for å bygge dette prosjektet og kreativ frihet
+
+Sidebeskrivelsene nedenfor for (Hjem, Bestilling, Galleri, Tilbakemelding) er ment som nyttige retningslinjer for å gi deg et utgangspunkt og litt inspirasjon. Du er ikke pålagt å følge disse layoutene nøyaktig.
+
+Vi oppfordrer deg til å ta med dine egne kreative ideer og et personlig preg på designet! Du kan gjerne:
+
+    Endre strukturen
+    Legge til nye funksjoner
+    Endre layouten
+    Introdusere helt andre designelementer eller interaksjoner
+
+...så lenge nettstedet ditt forblir tydelig, engasjerende og brukervennlig.
+
+"Dette er et kreativt prosjekt – tenk som en designer, bygg som en utvikler!"
+------------------------------------------------------------------------
+
+2. Hjemmeside Design:
+
+    Formål: Å introdusere CRAFTSVILLA, formidle kjerneverdiene (kreativitet, fellesskap, avslapning) og invitere brukere til å utforske workshops.
+
+    Foreslått struktur:
+    Hero-seksjon
+
+        Stort bannerbilde eller bakgrunnsvideo som viser folk i alle aldre som koser seg med kunstverksteder.
+        Overleggstekst: "Slipp løs kreativiteten din. Koble til. Slapp av."
+
+        Knapp «Bestill verkstedet ditt» (lenke som tar til bestillingssiden).
+
+        About -seksjon: Kort avsnitt om CRAFTSVILLAs oppdrag:
+
+        "Hos CRAFTSVILLA bringer vi mennesker sammen gjennom kreativitet. Enten det er foreldre som knytter bånd med barn, venner som utforsker nye hobbyer eller kolleger som finner avslapning etter jobb – vi tilbyr gledelige, guidede kunstopplevelser for alle."
+        Forhåndsvisning av tjenester:
+        Kort eller seksjoner for hver kunstform (mosaikkkunst, akvarellmaling, lerretsmaling), som viser et bilde, en kort beskrivelse og pris.
+
+        Fordeler: Ikoner eller illustrasjoner med kort tekst:
+
+        Ingen tidligere erfaring nødvendig
+
+        Alt materiale inkludert
+
+        For alle aldre
+
+        Slapp av og lad opp batteriene
+
+        Kommende workshops (valgfritt):
+        Teaser eller karusell som viser de neste tilgjengelige workshopene.
+
+3. Booking/Avtalebokingside:
+
+    Formål: Tillater brukere å bestille workshops på nett.
+    Foreslått struktur:
+    Workshop-alternativer
+    Vis hver kunstform (mosaikk, akvarell, lerret) med:
+        Pris, Bilde, Kort beskrivelse, "Bestill nå"-knapp
+    Bestillingsskjema Felt:
+        Navn, E-post, Telefonnummer, Velg workshop (nedtrekksmeny), Foretrukket dato og klokkeslett (datovelger), Antall deltakere, Spesielle ønsker (valgfritt tekstfelt), Send inn-knapp
+    Bekreftelsesmelding (valgfritt)
+    Etter at skjemaet er sendt inn, vis en vennlig bekreftelsesmelding:
+    "Takk for at du bestilte hos CRAFTSVILLA! Vi kontakter deg snart for å bekrefte plassen din."
+
+4. Tilbakemeldingssiden:
+
+    Formål:
+    Å samle tilbakemeldinger fra workshopdeltakere for kontinuerlig å forbedre CRAFTSVILLAs tilbud og forbedre kundeopplevelsen.
+
+    Eksempel på overskriftsseksjon
+    Tittel: "Vi vil gjerne høre fra deg!"
+
+    Kort introduksjon: "Tilbakemeldingene dine hjelper oss med å gjøre workshopene våre bedre for alle. Del gjerne opplevelsen din med oss!"
+    Form Fields:
+        Name, Email,
+
+        Nedtrekksmeny: Workshop deltatt på: Mosaikkkunst, Akvarellmaling, Lerretsmaling, Annet / Flere
+
+        Favorittdel av workshopen: Tekstområde, Etikett: "Hva likte du best?"
+
+        Forbedringsområder: Tekstområde, Etikett: "Hvordan kan vi forbedre opplevelsen din?"
+
+        Vil du anbefale CRAFTSVILLA til andre? Alternativknapper: Ja / Nei / Kanskje
+
+        Tillatelse til å dele tilbakemeldinger offentlig:
+
+            Avmerkingsboks: "Jeg gir CRAFTSVILLA tillatelse til å dele tilbakemeldingene mine på nettstedet deres eller sosiale medier."
+        Last opp bildefil
+
+        Send-knapp: "Send tilbakemelding"
+    Anbefalingsseksjon: Under skjemaet kan du vise frem noen positive tilbakemeldinger fra tidligere tilbakemeldinger (med brukertillatelse). Vis et lite profilbilde, tilbakemelding.
+
+5. Galleri Side:
+
+    Formål:
+    Inspirere besøkende med bilder av tidligere workshops og deltakernes kunst.
+    Foreslått struktur: Fotolayout (ved bruk av css flexbox)
+        Bilder av høy kvalitet av:
+            Folk som koser seg på workshops
+            Ferdige kunstverk
+            Gruppebilder av familier, venner, kolleger
+    Lysboksfunksjon
+    Ved å klikke på et bilde åpnes det i en større visning med beskrivelse.
+
+6. Footer(i samsvar med andre sider):
+
+   Kontaktinformasjon, navigasjonslenker, ikoner for sosiale medier
+
+7. Innsending og Presentasjon:
+
+    Send inn det ferdige figma file link sammen med GitHub-lenken for prosjektet.
+    Presenter designet for klassen (Valgfritt)
+
+Ytterligere Notater:
+
+Dette prosjektet gir deg en mulighet til å øve på dine front-end-ferdigheter samtidig som du uttrykker din kreativitet. Ikke vær redd for å eksperimentere med layout, farger, typografi og interaktivitet. Viktigst av alt – ha det gøy med å bygge nettstedet ditt!
+
+Vi gleder oss til å se dine unike ideer bli virkelighet.
+
+
+Page background:     #F3E6D3
+Main text:           #4A372D
+Secondary text:      #746258
+Buttons:             #A95F3B
+Button hover:        #87482F
+Links / accents:     #6F8792
+Borders:             #D8C4AC

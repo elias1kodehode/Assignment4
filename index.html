@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craftsvilla</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="hero">
+        <div class="herotext">
+            <h1><a href="#info">Craftsvilla!</a></h1>
+            <p>«Sammen gjennom kreativitet.»</p>
+
+        </div>
+    </div>
+    <div class="house">
+        <footer>
+            <section class="footer">
+                <div>
+                    <a href="">Facebook</a>
+                    <a href="">Instagram</a>
+                    <a href="">Tiktok</a>
+                </div>
+                <a href="#">Til start</a>
+            </section>
+        </footer>
+        <div class="floorcontainer">
+            <div class="floor info" id="info">
+                <div class="room ">
+                    <section>
+                        <h2>Velkommen til Craftsvilla</h2>
+                        <section>
+                            <div class="row">
+
+                                <p>Hos Craftsvilla handler kreativitet om mer enn å lage noe fint. Det handler om å
+                                    møtes,
+                                    prøve
+                                    noe nytt og skape gode opplevelser sammen. Enten du kommer med familie, venner,
+                                    kolleger
+                                    eller på egen hånd, ønsker vi å tilby et hyggelig og avslappet sted der alle kan
+                                    være
+                                    kreative - uansett erfaring.</p>
+                                <img src="img/crafting.jpg" alt="unger som maler">
+                            </div>
+                        </section>
+                        <div class="container">
+                            <div class="card">
+                                <div class="card-image"><img src="img/mosaic.jpg" alt="Mosaikk kunst"></div>
+                                <div class="card-text">
+                                    <h3>Mosaikk</h3>
+                                    <p>Sett sammen farger, former og materialer til ditt eget unike mosaikkverk. En
+                                        kreativ og avslappende aktivitet der du kan eksperimentere fritt og ta med deg
+                                        resultatet hjem.
+                                    </p>
+                                    <button onclick="goToBooking('mosaikk')">Mer informasjon</button>
+                                </div>
+
+                            </div>
+                            <div class="card">
+                                <div class="card-image"><img src="img/watercolor.jpg" alt="Mosaikk kunst"></div>
+                                <div class="card-text">
+                                    <h3>Akvarell</h3>
+                                    <p>Utforsk akvarellmalingens myke farger og spennende uttrykk. Du får veiledning
+                                        underveis og lærer enkle teknikker som gjør det lett å komme i gang, også for
+                                        nybegynnere.</p>
+                                    <button onclick="goToBooking('akvarell')">Mer informasjon</button>
+                                </div>
+
+                            </div>
+                            <div class="card">
+                                <div class="card-image"><img src="img/canvas.jpg" alt="Mosaikk kunst"></div>
+                                <div class="card-text">
+                                    <h3>Lerret</h3>
+                                    <p>Lag ditt eget kunstverk på lerret med maling, farger og kreative teknikker. Her
+                                        får du rom til å finne ditt eget uttrykk og skape noe personlig i ditt eget
+                                        tempo.</p>
+                                    <button onclick="goToBooking('lerret')">Mer informasjon</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="floor booking" id="booking-floor">
+                <div class="room ">
+                    <section>
+                        <h2>Workshops</h2>
+                        <div>
+                            <form action="">
+                                <label for="course">Velg kunstform for mer informasjon: </label>
+                                <select name="course" id="course">
+                                    <option value="" disabled selected>Trykk her</option>
+                                    <option value="mosaikk">Mosaikk</option>
+                                    <option value="akvarell">Akvarell</option>
+                                    <option value="lerret">Lerret</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="kurs-info">
+                            <div class="left-info">
+                                <section>
+
+                                    <h3 id="course-heading">Velg kurs fra nedtrekksmenyen!</h3>
+                                    <p id="course-info">Vi har en rekke forskjellige workshops du kan melde deg på!</p>
+                                    <p id="course-info2"></p>
+                                    <p id="course-info3"></p>
+                                    <p id="course-price">Pris per person får du ser når du velger workshop </p>
+                                </section>
+                            </div>
+                            <div class="right-info">
+                                <img src="img/art.jpg" alt="Malerkoster i forskjellige farger" id="course-image">
+                            </div>
+                        </div>
+                        <dialog id="booking-dialog">
+                            <h2>Bestillingskjema</h2>
+                            <form action="" id="bestilling-form">
+                                <label for="name">Navn: </label>
+                                <input type="text" name="name" id="name" placeholder="Navn Navnesen" required>
+                                <label for="email">Epost:</label>
+                                <input type="email" name="email" id="email" placeholder="navn@navnesen.no" required>
+                                <label for="telefon">Telefon: </label>
+                                <input type="tel" name="telefon" id="telefon" required>
+                                <label for="courseBooking">Velg kunstform: </label>
+                                <select name="courseBooking" id="courseBooking">
+                                    <option value="" disabled selected>Trykk her</option>
+                                    <option value="mosaikk">Mosaikk</option>
+                                    <option value="akvarell">Akvarell</option>
+                                    <option value="lerret">Lerret</option>
+                                </select>
+                                <!-- DATO -->
+                                <label for="dato">Velg dato og klokkeslett</label>
+                                <input type="datetime-local" name="dato" id="dato">
+                                <!-- Antall deltakere -->
+                                <label for="antall">Antall deltakere:</label>
+                                <input type="number" name="antall" id="antall" value="1" min="1">
+                                <!-- Spesielle ønsker (valgfritt) -->
+                                <label for="wishes">Spesielle ønsker: </label>
+                                <textarea name="wishes" id="wishes"></textarea>
+                                <button type="submit" id="bestill">Bestill</button>
+                            </form>
+
+
+                            <button id="close-dialog">Avbryt</button>
+                        </dialog>
+                        <button id="open-dialog">Bestill workshop!</button>
+                        <dialog id="takk-bestilling">
+                            <h2>Takk for din bestilling!</h2>
+                            <div id="kvittering"></div>
+                            <button id="lukk-bestilling">Lukk</button>
+                        </dialog>
+                    </section>
+                </div>
+            </div>
+            <div class="floor gallery">
+                <div class="room galleri-rom">
+                    <section>
+                        <h2>Galleri</h2>
+                        <div class="galleri-container">
+                            <img src="img/gallery/1.jpg" alt="mosaik på bakken" class="gallery-image">
+                            <img src="img/gallery/2.jpg" alt="symmetrisk mosaikk" class="gallery-image">
+                            <img src="img/gallery/3.jpg" alt="to personer som maler med vannfarger"
+                                class="gallery-image">
+                            <img src="img/gallery/4.jpg" alt="handen til et barn som maler med vannfarger"
+                                class="gallery-image">
+                            <img src="img/gallery/5.jpg" alt="mange forskjellige eksempler på mosaikk ruter"
+                                class="gallery-image">
+                            <img src="img/gallery/6.jpg" alt="kvinne som maler på lerret" class="gallery-image">
+                            <img src="img/gallery/7.jpg" alt="person som maler på treverk" class="gallery-image">
+                            <img src="img/gallery/8.jpg" alt="mosaikk glassruter" class="gallery-image">
+                            <img src="img/gallery/9.jpg" alt="vannfarger og et maleri" class="gallery-image">
+                        </div>
+                    </section>
+                    <dialog id="lightbox">
+                        <img src="" alt="" id="lightbox-image">
+                        <p id="lightbox-text"></p>
+                        <button id="lightbox-close">Lukk</button>
+                    </dialog>
+                </div>
+            </div>
+            <div class="floor feedback">
+                <div class="room">
+                    <section>
+                        <h2>Tilbakemelding</h2>
+                        <button id="open-tilbakemeldings-dialog">Send oss en
+                            tilbakemelding!</button>
+                        <div class="meldingscontainer">
+                            <div id="melding">
+                                <h2>Tidligere tilbakemeldinger</h2>
+                                <section>
+                                    <p>Navn: Elias</p>
+                                    <p>Epost: elias1.kodehode@gmail.com</p>
+                                    <p>Kunstform: Webdesign</p>
+                                    <p>Beste del? Koding</p>
+                                    <p>Hva kan forbedres? Oppgaven var litt lang</p>
+                                    <p>Anbefaler: ja</p>
+                                </section>
+                            </div>
+                        </div>
+
+                        <dialog id="tilbakemelding-dialog">
+                            <form action="" id="tilbakemelding-form">
+                                <!-- navn -->
+                                <label for="name">Navn: </label>
+                                <input type="text" name="name" id="name" placeholder="Navn Navnesen" required>
+                                <!-- email -->
+                                <label for="epost">Epost:</label>
+                                <input type="email" name="email" id="email" placeholder="navn@navnesen.no" required>
+                                <!-- kunstform nedtrekk -->
+                                <label for="courseBooking">Velg kunstform: </label>
+                                <select name="courseBooking" id="courseBooking">
+                                    <option value="" disabled selected>Trykk her</option>
+                                    <option value="mosaikk">Mosaikk</option>
+                                    <option value="akvarell">Akvarell</option>
+                                    <option value="lerret">Lerret</option>
+                                </select>
+                                <!-- tekstområde: Favorittdel -->
+                                <label for="favorittdel">Hva likte du best?</label>
+                                <textarea name="favorittdel" id="favorittdel"></textarea>
+                                <!-- Forbedringsområde -->
+                                <label for="forbedring">Hvordan kan vi forbedre oss?</label>
+                                <textarea name="forbedring" id="forbedring"></textarea>
+                                <div>
+
+                                    <label for="anbefaling">Vil du anbefale CRAFTSVILLA til andre?</label><br>
+                                    <input type="radio" name="anbefaling" id="ja" value="Ja">
+                                    <label for="ja">Ja</label><br>
+                                    <input type="radio" name="anbefaling" id="nei" value="Nei">
+                                    <label for="nei">Nei</label><br>
+                                    <input type="radio" name="anbefaling" id="kanskje" value="Kanskje">
+                                    <label for="kanskje">Kanskje</label>
+
+                                </div><!-- RADIO JA NEI KANSKJE -->
+                                <div>
+                                    <input type="checkbox" name="tillatelse" id="tillatelse"><label
+                                        for="tillatelse">"Jeg
+                                        gir CRAFTSVILLA tillatelse til å dele tilbakemeldingene mine på nettstedet deres
+                                        eller sosiale medier."</label>
+                                </div>
+                                <label for="bilde-opplasting">Last opp bildefil</label>
+                                <input type="file" name="bilde-opplasting" id="bilde-opplasting">
+                                <button id="send-tilbakemelding">Send inn</button>
+                            </form>
+                            <button id="close-tilbakemelding-dialog">Avbryt</button>
+                        </dialog>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

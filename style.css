@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+:root {
+  --background-color: #f3e6d3;
+  --primary-color: #4a372d;
+  --secondary-color: #746258;
+  --tertiary-color: #a95f3b;
+  --alt-color: #87482f;
+  --accents-color: #6f8792;
+  --border-color: #d8c4ac;
+  --background-opaque: rgba(243, 230, 211, 0.7);
+
+  /* spacing */
+  --space-small: 0.5rem;
+  --space-medium: 1rem;
+  --space-large: 2rem;
+  --space-xl: 2.5rem;
+  --space-section: 3.75rem;
+
+  /* font sizes */
+  --text-small: 0.875rem;
+  --text-base: 1rem;
+  --text-medium: 1.25rem;
+  --text-large: 1.875rem;
+  --text-xl: 2.5rem;
+
+  /* other */
+  --radius: 0.625rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* div {
+  border: 1px solid black;
+} */
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  font-family: "DM Sans", sans-serif;
+  font-size: var(--text-base);
+}
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  font-family: "Fraunces", serif;
+}
+p {
+  padding: var(--space-small);
+}
+button {
+  color: var(--background-color);
+  font-size: var(--text-medium);
+  background-color: var(--tertiary-color);
+  font-family: "DM Sans", sans-serif;
+  padding: var(--space-small) var(--space-medium);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+button:hover {
+  background-color: var(--alt-color);
+  transform: translateY(-2px);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+}
+.house {
+  width: 100%;
+  margin: auto;
+}
+.floor {
+  height: 100dvh;
+  scroll-snap-align: start;
+}
+.room {
+  height: 90%;
+  width: 90%;
+  margin: auto;
+  padding-top: var(--space-xl);
+  overflow: hidden;
+}
+.info {
+  background-image: url(img/info.png);
+  background-position: center;
+  background-size: cover;
+}
+.booking {
+  background-image: url(img/booking.png);
+  background-position: center;
+  background-size: cover;
+}
+.gallery {
+  background-image: url(img/gallery.png);
+  background-position: center;
+  background-size: cover;
+}
+.galleri-container {
+  columns: 180px;
+  column-gap: 1rem;
+}
+.galleri-rom {
+  width: 80%;
+  margin: auto;
+}
+.galleri-container img {
+  width: 100%;
+  display: block;
+  margin-bottom: var(--space-small);
+  break-inside: avoid;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.galleri-container img:hover {
+  background-color: var(--alt-color);
+  transform: translateY(-2px);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+}
+.feedback {
+  display: flex;
+  flex-direction: column;
+  background-image: url(img/feedback.png);
+  background-position: center;
+  background-size: cover;
+}
+.hero {
+  background-image: url(img/background.png);
+  background-position: center;
+  background-size: cover;
+  height: 100dvh;
+  scroll-snap-align: start;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.herotext {
+  background-color: var(--background-opaque);
+  border-radius: var(--radius);
+  padding: var(--space-medium);
+}
+section {
+  margin-top: 0.2rem;
+  background-color: var(--background-opaque);
+  border-radius: var(--radius);
+  padding: var(--space-small);
+  border: var(--border-color) 1px solid;
+}
+.row {
+  display: flex;
+}
+.row img {
+  width: 50%;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  object-fit: cover;
+}
+/* Product card */
+.container {
+  display: flex;
+  margin-top: var(--space-medium);
+  gap: 3%;
+}
+.card {
+  width: calc((100% / 3));
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+}
+.card-image {
+  width: 100%;
+  min-height: 8rem;
+  max-height: 10rem;
+  border-bottom: 1px solid var(--border-color);
+}
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.card-text {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: var(--space-small);
+}
+footer {
+  height: 50px;
+  position: sticky;
+  top: calc(100dvh - 40px);
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.left-info {
+  padding: var(--space-small);
+}
+.right-info {
+  display: flex;
+  flex-direction: column;
+}
+.right-info img {
+  width: 30vw;
+  max-height: 50vh;
+  object-fit: cover;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+}
+.kurs-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-family: "DM Sans", sans-serif;
+  gap: var(--space-small);
+  margin-top: 15px;
+  padding: var(--space-small);
+}
+input,
+textarea,
+select {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  font-size: 16px;
+}
+textarea {
+  resize: vertical;
+}
+dialog {
+  margin: auto;
+  border-radius: var(--radius);
+  background-color: var(--background-color);
+}
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+#lightbox {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+#lightbox::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#lightbox-image {
+  max-width: 90vw;
+  max-height: 75vh;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+}
+
+#lightbox-text {
+  margin: 0.5rem 0 0.5rem 0;
+  text-align: center;
+  background-color: var(--background-opaque);
+  border-radius: var(--radius);
+  padding: var(--space-small);
+}
+
+.meldingscontainer {
+  overflow-y: auto;
+  max-height: 80vh;
+}
